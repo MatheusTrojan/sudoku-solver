@@ -21,3 +21,7 @@
     height: 50px;
     border: 1px #808080 solid;
 }
+
+.casa__diferente {
+    background-color: rgba(137, 43, 226, 0.349);
+}
