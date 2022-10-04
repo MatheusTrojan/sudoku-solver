@@ -6,10 +6,10 @@ export function insereValores() {
     inputs.forEach((input) => {
         if(input.value) {
             tabuleiro.push(parseInt(input.value))
-            input.classList.add('input-el') 
+            input.classList.add('elemento-valor') 
         } else {
             tabuleiro.push(0)
-            input.classList.add('empty-el')
+            input.classList.add('elemento-vazio')
         }
     })
 }

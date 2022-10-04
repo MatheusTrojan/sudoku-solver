@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="src/estilos/styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="teste">SUDOKU SOLVER</h1>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">SUDOKU SOLVER</h1>
     </header>
 
-    <main>
+    <main class="container">
         <div class="sudoku">
             <div class="tabuleiro" id="tabuleiro"></div>
-            <button type="button" id="botao-resolver">Resolver</button>
-            <button type="button" id="botao-limpar">Limpar</button>
+            <div class="botoes">
+                <button type="button" id="botao-resolver" class="botao">Resolver</button>
+                <button type="button" id="botao-limpar" class="botao">Limpar</button>
+            </div>
         </div>
     </main>
 

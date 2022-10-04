@@ -1,12 +1,20 @@
+@import url("./cabecalho.css");
+@import url("./botoes.css");
 
 * {
     box-sizing: border-box;
     border-spacing: 0;
 }
 
+.container {
+    width: 100%;
+}
+
 .sudoku {
-    margin: auto;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .tabuleiro {
@@ -15,13 +23,21 @@
 }
 
 .tabuleiro input {
-    text-align: center;
-    font-size: 30px;
+    border: 1px #808080 solid;
+    font-size: 2rem;
     width: 50px;
     height: 50px;
-    border: 1px #808080 solid;
+    text-align: center;
 }
 
+.casa {
+    background-color: rgba(153, 132, 230, 0.349);
+}
 .casa__diferente {
-    background-color: rgba(137, 43, 226, 0.349);
+    background-color: rgba(70, 43, 226, 0.349);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
 }
