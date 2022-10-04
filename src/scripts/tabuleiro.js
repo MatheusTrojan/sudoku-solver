@@ -3,11 +3,17 @@ export function criaTabuleiro () {
 
     for (var i = 0; i < 81; i++) {
         const elementoInput = document.createElement("input")
+        const containerInput = document.querySelector('.tabuleiro');
 
         elementoInput.setAttribute("type", "number");
         elementoInput.setAttribute("min", "1");
         elementoInput.setAttribute("max", "9");
         elementoInput.classList.add("casa");
+
+        containerInput.addEventListener('input', (evento) => {
+            if (evento.target.value > 9)  evento.target.value ='9'
+          })
+          
 
         if (
             ((i % 9 == 0 || i % 9 == 1 || i % 9 == 2 || i % 9 == 6 || i % 9 == 7 || i % 9 == 8) && i < 27) ||
@@ -20,4 +26,7 @@ export function criaTabuleiro () {
         tabuleiroSudoku.appendChild(elementoInput)
     }
 }
+
+
+
 
