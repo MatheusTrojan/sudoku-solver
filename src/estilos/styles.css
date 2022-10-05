@@ -1,43 +1,23 @@
 @import url("./cabecalho.css");
-@import url("./botoes.css");
+@import url("./sudoku.css");
+
+:root {
+    --fonte-principal: 'Poppins';
+    
+    --branco: hsl(0, 0%, 100%);
+    --preto: black;
+    --cor-principal: #2A4FBF;
+    --cor-secundaria: #4368D6;
+    --cor-terciaria: #96ABE8;
+}
 
 * {
     box-sizing: border-box;
     border-spacing: 0;
+    font-family: var(--fonte-principal);   
 }
 
 .container {
     width: 100%;
 }
 
-.sudoku {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.tabuleiro {
-    width: 450px;
-    height: 450px;
-}
-
-.tabuleiro input {
-    border: 1px #808080 solid;
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-
-.casa {
-    background-color: rgba(153, 132, 230, 0.349);
-}
-.casa__diferente {
-    background-color: rgba(70, 43, 226, 0.349);
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none;
-}

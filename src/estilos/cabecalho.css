@@ -1,4 +1,19 @@
 .cabecalho {
-    text-align: center;
-    margin: 1rem;
+    align-items: center;
+    background-color: var(--cor-principal);
+    display: flex;
+    font-family: var(--fonte-principal);   
+    margin-bottom: 1rem;
+    padding: 2rem;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cabecalho__titulo {
+    justify-self: flex-start;
+    font-size: 1.25em;
+}
+
+.cabecalho__botoes {
+    display: flex;
 }

@@ -1,0 +1,37 @@
+.sudoku {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tabuleiro {
+    width: 450px;
+    height: 450px;
+}
+
+.tabuleiro input {
+    border: 1px var(--preto) solid;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.casa {
+    background-color: var(--cor-terciaria);
+}
+.casa__diferente {
+    background-color: var(--cor-secundaria);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.botao {
+    margin: 1rem;
+    background: var(--cor-principal);
+    cursor: pointer;
+}
