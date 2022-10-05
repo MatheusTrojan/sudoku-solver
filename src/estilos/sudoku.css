@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.sudoku__texto {
+    margin: 0.25rem 10rem;
+}
+
 .tabuleiro {
     width: 450px;
     height: 450px;
@@ -34,4 +38,5 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 1rem;
     background: var(--cor-principal);
     cursor: pointer;
+    margin: 1em;
 }
