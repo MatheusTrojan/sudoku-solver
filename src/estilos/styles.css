@@ -1,5 +1,6 @@
 @import url("./cabecalho.css");
 @import url("./sudoku.css");
+@import url("./rodape.css");
 
 :root {
     --fonte-principal: 'Poppins';
@@ -18,6 +19,9 @@
 }
 
 .container {
-    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 8em;
+    height: calc(77vh);
 }
 
