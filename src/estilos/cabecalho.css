@@ -16,4 +16,5 @@
 
 .cabecalho__botoes {
     display: flex;
+    gap: 1rem;
 }
