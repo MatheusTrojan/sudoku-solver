@@ -1,0 +1,15 @@
+.azul .cabecalho, .azul .rodape {
+    background: var(--azul-principal)
+}
+
+.azul .casa {
+    background-color: var(--azul-terciaria);
+}
+
+.azul .casa__diferente, .azul .botao {
+    background-color: var(--azul-secundaria);
+}
+
+.azul .cabecalho__botao {
+    background-color: var(--azul-terciaria)
+}

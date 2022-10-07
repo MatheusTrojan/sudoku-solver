@@ -1,3 +1,5 @@
+@import url("./temas/dark.css");
+@import url("./temas/azul.css");
 @import url("./cabecalho.css");
 @import url("./sudoku.css");
 @import url("./rodape.css");
@@ -7,9 +9,13 @@
     
     --branco: hsl(0, 0%, 100%);
     --preto: black;
-    --cor-principal: #2A4FBF;
-    --cor-secundaria: #4368D6;
-    --cor-terciaria: #96ABE8;
+    --cor-principal: #547735;
+    --cor-secundaria: #628E3D;
+    --cor-terciaria: #B6CE8A;
+    
+    --azul-principal: #2A4FBF;
+    --azul-secundaria: #4368D6;
+    --azul-terciaria: #96ABE8;
 }
 
 * {
@@ -18,10 +24,13 @@
     font-family: var(--fonte-principal);   
 }
 
+body {
+    height: 100vh;
+}
+
 .container {
     align-items: center;
     display: flex;
-    padding: 8em;
-    height: calc(77vh);
+    height: calc(100% - 66.4px - 80.4px);
 }
 

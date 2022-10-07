@@ -14,11 +14,14 @@
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">SUDOKU SOLVER</h1>
-        <div class="cabecalho__botoes">
-            <button type="button" class="cabecalho__botao">ORIGINAL</button>
-            <button type="button" class="cabecalho__botao">DARK</button>
-            <button type="button" class="cabecalho__botao">AZUL</button>
-        </div>
+        <section class="cabecalho__tema">
+            <h2 class="cabecalho__subtitulo">Altere o tema da página:</h2>
+            <div class="cabecalho__botoes">
+                <button type="button" class="cabecalho__botao tema__original" onclick="temaOriginal()">ORIGINAL</button>
+                <button type="button" class="cabecalho__botao tema__dark" onclick="temaDark()">DARK</button>
+                <button type="button" class="cabecalho__botao tema__azul" onclick="temaAzul()">AZUL</button>
+            </div>
+        </section>
     </header>
 
     <main class="container">
@@ -45,5 +48,6 @@
     </footer>
 
     <script type="module" defer src="src/scripts/main.js"></script>
+    <script src="src/scripts/tema.js"></script>
 </body>
 </html>

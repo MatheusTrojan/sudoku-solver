@@ -3,8 +3,8 @@
     background: var(--cor-principal);
     display: flex;
     justify-content: center;
-    padding: 1.2em;
-    min-height: 5.5vh;
+    padding: 1rem;
+    min-height: 5vh;
 }
 
 .rodape__texto {
