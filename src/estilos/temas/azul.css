@@ -2,14 +2,10 @@
     background: var(--azul-principal)
 }
 
-.azul .casa {
+.azul .casa, .azul .cabecalho__botao, .azul .botao:hover {
     background-color: var(--azul-terciaria);
 }
 
 .azul .casa__diferente, .azul .botao {
     background-color: var(--azul-secundaria);
-}
-
-.azul .cabecalho__botao {
-    background-color: var(--azul-terciaria)
 }

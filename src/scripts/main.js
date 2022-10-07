@@ -1,4 +1,4 @@
-import { resolver, insereValores, preencherValores } from "./resolvedor.js"
+import { resolver, insereValores, preencherValores, limpaValores } from "./resolvedor.js"
 import { criaTabuleiro } from "./tabuleiro.js"
 
 const botaoResolver = document.querySelector("#botao-resolver")
@@ -14,6 +14,7 @@ function principal() {
             alert("Esse jogo está inválido!")
         }
     })
-    botaoLimpar.addEventListener('click', () => window.location.reload(true))
+
+    botaoLimpar.addEventListener('click', () => limpaValores())
 }
 principal()

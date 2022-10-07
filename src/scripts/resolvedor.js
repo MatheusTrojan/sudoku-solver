@@ -83,3 +83,8 @@ export function preencherValores() {
     const inputs = document.querySelectorAll('input')
     inputs.forEach((input, i) => input.value = tabuleiro[i])
 }
+
+export function limpaValores() {
+    const inputs = document.querySelectorAll('input')
+    inputs.forEach((input) => input.value = '')
+}

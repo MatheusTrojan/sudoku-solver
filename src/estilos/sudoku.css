@@ -39,4 +39,10 @@ input[type=number]::-webkit-outer-spin-button {
     background: var(--cor-principal);
     cursor: pointer;
     margin: 1em;
+    transition: 0.3s ease-in-out;
+}
+
+.botao:hover {
+    background-color: var(--cor-terciaria);
+    scale: 1.1;
 }
