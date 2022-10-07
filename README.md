@@ -34,7 +34,7 @@ O usuário deverá conseguir:
 
 ### Preview
 
-![](/src/design/demonstracao.gif)
+![](/src/images/demonstracao.gif)
 
 ### Links
 
