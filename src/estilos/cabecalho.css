@@ -48,3 +48,17 @@
     background-color: var(--azul-secundaria);
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    .cabecalho__titulo {
+        font-size: 1rem;
+    }
+
+    .cabecalho__subtitulo {
+        font-size: 0.75rem;
+    }
+
+    .cabecalho__botao {
+        font-size: 0.7rem;
+    }
+}

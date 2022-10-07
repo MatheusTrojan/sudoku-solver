@@ -6,7 +6,12 @@
 }
 
 .sudoku__texto {
-    margin: 0.25rem 10rem;
+    margin: 1rem 0;
+}
+
+.sudoku__texto--paragrafo {
+    margin: 0.5rem;
+    justify-self: flex-start;
 }
 
 .tabuleiro {
@@ -35,14 +40,45 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .botao {
-    margin: 1rem;
     background: var(--cor-principal);
+    border-radius: 5px;
     cursor: pointer;
-    margin: 1em;
+    margin: 1.5em;
+    padding: 0.25rem 1rem;
     transition: 0.3s ease-in-out;
 }
 
 .botao:hover {
     background-color: var(--cor-terciaria);
     scale: 1.1;
+}
+
+@media screen and (max-width: 600px) {
+    .sudoku__texto--paragrafo {
+        font-size: 0.75rem;
+    }
+
+    .tabuleiro {
+        width: 360px;
+        height: 360px;
+    }
+    
+    .tabuleiro input {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tabuleiro {
+        width: 270px;
+        height: 270px;
+    }
+    
+    .tabuleiro input {
+        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+    }
 }

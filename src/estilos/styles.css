@@ -29,8 +29,12 @@ body {
 }
 
 .container {
-    align-items: center;
-    display: flex;
     height: calc(100% - 66.4px - 80.4px);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: calc(100% - 66.4px - 74.8px);
+    }
 }
 
