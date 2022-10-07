@@ -4,6 +4,12 @@ import { criaTabuleiro } from "./tabuleiro.js"
 const botaoResolver = document.querySelector("#botao-resolver")
 const botaoLimpar = document.querySelector("#botao-limpar")
 
+function alertaInvalido(){
+    swal("Esse jogo está inválido!", "","warning", {
+        button: "Continuar",      
+    });
+}
+
 function principal() {
     criaTabuleiro()
     botaoResolver.addEventListener('click', () => {
@@ -11,7 +17,7 @@ function principal() {
         if(resolver()) {
             preencherValores()
         } else {
-            alert("Esse jogo está inválido!")
+            alertaInvalido()
         }
     })
 
